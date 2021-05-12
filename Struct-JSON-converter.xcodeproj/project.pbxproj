@@ -13,6 +13,7 @@
 		7CA8EB0B264C71EC006C5E52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA8EB09264C71EC006C5E52 /* Main.storyboard */; };
 		7CA8EB0D264C71ED006C5E52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA8EB0C264C71ED006C5E52 /* Assets.xcassets */; };
 		7CA8EB10264C71ED006C5E52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA8EB0E264C71ED006C5E52 /* LaunchScreen.storyboard */; };
+		7CA8EB1A264C7367006C5E52 /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA8EB19264C7367006C5E52 /* Instrument.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		7CA8EB0C264C71ED006C5E52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CA8EB0F264C71ED006C5E52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CA8EB11264C71ED006C5E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CA8EB17264C7211006C5E52 /* Struct-JSON-converter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Struct-JSON-converter.entitlements"; sourceTree = "<group>"; };
+		7CA8EB19264C7367006C5E52 /* Instrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instrument.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +59,11 @@
 		7CA8EB02264C71EC006C5E52 /* Struct-JSON-converter */ = {
 			isa = PBXGroup;
 			children = (
+				7CA8EB17264C7211006C5E52 /* Struct-JSON-converter.entitlements */,
 				7CA8EB03264C71EC006C5E52 /* AppDelegate.swift */,
 				7CA8EB05264C71EC006C5E52 /* SceneDelegate.swift */,
 				7CA8EB07264C71EC006C5E52 /* ViewController.swift */,
+				7CA8EB19264C7367006C5E52 /* Instrument.swift */,
 				7CA8EB09264C71EC006C5E52 /* Main.storyboard */,
 				7CA8EB0C264C71ED006C5E52 /* Assets.xcassets */,
 				7CA8EB0E264C71ED006C5E52 /* LaunchScreen.storyboard */,
@@ -137,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CA8EB1A264C7367006C5E52 /* Instrument.swift in Sources */,
 				7CA8EB08264C71EC006C5E52 /* ViewController.swift in Sources */,
 				7CA8EB04264C71EC006C5E52 /* AppDelegate.swift in Sources */,
 				7CA8EB06264C71EC006C5E52 /* SceneDelegate.swift in Sources */,
@@ -286,6 +292,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Struct-JSON-converter/Struct-JSON-converter.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U2N9D47H83;
 				INFOPLIST_FILE = "Struct-JSON-converter/Info.plist";
@@ -295,6 +302,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.symphonic-emotions.Struct-JSON-converter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Struct-JSON-converter/Struct-JSON-converter.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U2N9D47H83;
 				INFOPLIST_FILE = "Struct-JSON-converter/Info.plist";
@@ -314,6 +323,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.symphonic-emotions.Struct-JSON-converter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
